@@ -1,0 +1,320 @@
+bgp> list
+  enable
+  exit
+  help
+  list
+  quit
+  show bgp ipv4 (unicast|multicast)
+  show bgp ipv4 (unicast|multicast) A.B.C.D
+  show bgp ipv4 (unicast|multicast) A.B.C.D/M
+  show bgp ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X)
+  show bgp ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X) A.B.C.D
+  show bgp ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X) A.B.C.D/M
+  show bgp ipv4 (unicast|multicast) rsclient summary
+  show bgp ipv4 (unicast|multicast) summary
+  show bgp memory
+  show bgp view WORD ipv4 (unicast|multicast) community
+  show bgp view WORD ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export)
+  show bgp view WORD ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show bgp view WORD ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show bgp view WORD ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show bgp view WORD ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X) (advertised-routes|received-routes)
+  show bgp view WORD ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X)
+  show bgp view WORD ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X) A.B.C.D
+  show bgp view WORD ipv4 (unicast|multicast) rsclient (A.B.C.D|X:X::X:X) A.B.C.D/M
+  show bgp view WORD ipv4 (unicast|multicast) rsclient summary
+  show bgp view WORD ipv4 (unicast|multicast) summary
+  show bgp views
+  show history
+  show ip as-path-access-list
+  show ip as-path-access-list WORD
+  show ip bgp
+  show ip bgp A.B.C.D
+  show ip bgp A.B.C.D/M
+  show ip bgp A.B.C.D/M longer-prefixes
+  show ip bgp attribute-info
+  show ip bgp cidr-only
+  show ip bgp community
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)          show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp community (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp community-info
+  show ip bgp community-list (<1-500>|WORD)
+  show ip bgp community-list (<1-500>|WORD) exact-match
+  show ip bgp dampened-paths
+  show ip bgp filter-list WORD
+  show ip bgp flap-statistics
+  show ip bgp flap-statistics A.B.C.D
+  show ip bgp flap-statistics A.B.C.D/M
+  show ip bgp flap-statistics A.B.C.D/M longer-prefixes
+  show ip bgp flap-statistics cidr-only
+  show ip bgp flap-statistics filter-list WORD
+  show ip bgp flap-statistics prefix-list WORD
+  show ip bgp flap-statistics regexp .LINE
+  show ip bgp flap-statistics route-map WORD
+  show ip bgp ipv4 (unicast|multicast)
+  show ip bgp ipv4 (unicast|multicast) A.B.C.D
+  show ip bgp ipv4 (unicast|multicast) A.B.C.D/M
+  show ip bgp ipv4 (unicast|multicast) A.B.C.D/M longer-prefixes
+  show ip bgp ipv4 (unicast|multicast) cidr-only
+  show ip bgp ipv4 (unicast|multicast) community
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export)
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp ipv4 (unicast|multicast) community (AA:NN|local-AS|no-advertise|no-export) exact-match
+  show ip bgp ipv4 (unicast|multicast) community-list (<1-500>|WORD)
+  show ip bgp ipv4 (unicast|multicast) community-list (<1-500>|WORD) exact-match
+  show ip bgp ipv4 (unicast|multicast) filter-list WORD
+  show ip bgp ipv4 (unicast|multicast) neighbors
+  show ip bgp ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X)
+  show ip bgp ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X) advertised-routes
+  show ip bgp ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X) received prefix-filter
+  show ip bgp ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X) received-routes
+  show ip bgp ipv4 (unicast|multicast) neighbors (A.B.C.D|X:X::X:X) routes
+  show ip bgp ipv4 (unicast|multicast) paths
+  show ip bgp ipv4 (unicast|multicast) prefix-list WORD
+  show ip bgp ipv4 (unicast|multicast) regexp .LINE
+  show ip bgp ipv4 (unicast|multicast) route-map WORD
+  show ip bgp ipv4 (unicast|multicast) rsclient summary
+  show ip bgp ipv4 (unicast|multicast) summary
+  show ip bgp neighbors
+  show ip bgp neighbors (A.B.C.D|X:X::X:X)
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) advertised-routes
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) dampened-routes
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) flap-statistics
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) received prefix-filter
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) received-routes
+  show ip bgp neighbors (A.B.C.D|X:X::X:X) routes
+  show ip bgp paths
+  show ip bgp prefix-list WORD
+  show ip bgp regexp .LINE
+  show ip bgp route-map WORD
+  show ip bgp rsclient (A.B.C.D|X:X::X:X)
+  show ip bgp rsclient (A.B.C.D|X:X::X:X) A.B.C.D
+  show ip bgp rsclient (A.B.C.D|X:X::X:X) A.B.C.D/M
+  show ip bgp rsclient summary
+  show ip bgp scan
+  show ip bgp scan detail
+  show ip bgp summary
+  show ip bgp view WORD
+  show ip bgp view WORD A.B.C.D
+  show ip bgp view WORD A.B.C.D/M
+  show ip bgp view WORD ipv4 (unicast|multicast) rsclient summary
+  show ip bgp view WORD ipv4 (unicast|multicast) summary
+  show ip bgp view WORD neighbors
+  show ip bgp view WORD neighbors (A.B.C.D|X:X::X:X)
+  show ip bgp view WORD neighbors (A.B.C.D|X:X::X:X) advertised-routes
+  show ip bgp view WORD neighbors (A.B.C.D|X:X::X:X) received-routes
+  show ip bgp view WORD rsclient (A.B.C.D|X:X::X:X)
+  show ip bgp view WORD rsclient (A.B.C.D|X:X::X:X) A.B.C.D
+  show ip bgp view WORD rsclient (A.B.C.D|X:X::X:X) A.B.C.D/M
+  show ip bgp view WORD rsclient summary
+  show ip bgp view WORD summary
+  show ip bgp vpnv4 all
+  show ip bgp vpnv4 all A.B.C.D
+  show ip bgp vpnv4 all A.B.C.D/M
+  show ip bgp vpnv4 all neighbors
+  show ip bgp vpnv4 all neighbors A.B.C.D
+  show ip bgp vpnv4 all neighbors A.B.C.D advertised-routes
+  show ip bgp vpnv4 all neighbors A.B.C.D routes
+  show ip bgp vpnv4 all summary
+  show ip bgp vpnv4 all tags
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn A.B.C.D
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn A.B.C.D/M
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn neighbors
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn neighbors A.B.C.D
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn neighbors A.B.C.D advertised-routes
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn neighbors A.B.C.D routes
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn summary
+  show ip bgp vpnv4 rd ASN:nn_or_IP-address:nn tags
+  show ip community-list
+  show ip community-list (<1-500>|WORD)
+  show ip extcommunity-list
+  show ip extcommunity-list (<1-500>|WORD)
+  show ip prefix-list
+  show ip prefix-list WORD
+  show ip prefix-list WORD A.B.C.D/M
+  show ip prefix-list WORD A.B.C.D/M first-match
+  show ip prefix-list WORD A.B.C.D/M longer
+  show ip prefix-list WORD seq <1-4294967295>
+  show ip prefix-list detail
+  show ip prefix-list detail WORD
+  show ip prefix-list summary
+  show ip prefix-list summary WORD
+  show logging
+  show thread cpu [FILTER]
+  show version
+  show work-queues
+  terminal length <0-512>
+  terminal no length
+  who
+bgp>
+bgp# configure terminal
+bgp(config)# list
+  access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark .LINE
+  access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D
+  access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D A.B.C.D
+  access-list (<1-99>|<1300-1999>) (deny|permit) any
+  access-list (<1-99>|<1300-1999>) (deny|permit) host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D host A.B.C.D
+  access-list WORD (deny|permit) A.B.C.D/M
+  access-list WORD (deny|permit) A.B.C.D/M exact-match
+  access-list WORD (deny|permit) any
+  banner motd default
+  banner motd file [FILE]
+  bgp config-type (cisco|zebra)
+  bgp multiple-instance
+  debug bgp
+  debug bgp as4
+  debug bgp as4 segment
+  debug bgp events
+  debug bgp filters
+  debug bgp fsm
+  debug bgp keepalives
+  debug bgp updates
+  debug bgp updates (in|out)
+  debug bgp zebra
+  end
+  exit
+  help
+  hostname WORD
+  ip as-path access-list WORD (deny|permit) .LINE
+  ip community-list <1-99> (deny|permit)
+  ip community-list <1-99> (deny|permit) .AA:NN
+  ip community-list <100-500> (deny|permit) .LINE
+  ip community-list expanded WORD (deny|permit) .LINE
+  ip community-list standard WORD (deny|permit)
+  ip community-list standard WORD (deny|permit) .AA:NN
+  ip extcommunity-list <1-99> (deny|permit)
+  ip extcommunity-list <1-99> (deny|permit) .AA:NN
+  ip extcommunity-list <100-500> (deny|permit) .LINE
+  ip extcommunity-list expanded WORD (deny|permit) .LINE
+  ip extcommunity-list standard WORD (deny|permit)
+  ip extcommunity-list standard WORD (deny|permit) .AA:NN
+  ip prefix-list WORD (deny|permit) (A.B.C.D/M|any)
+  ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  ip prefix-list WORD description .LINE
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) (A.B.C.D/M|any)
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  ip prefix-list sequence-number
+  line vty
+  list
+  log facility (kern|user|mail|daemon|auth|syslog|lpr|news|uucp|cron|local0|local1|local2|local3|local4|local5|local6|local7)
+  log monitor
+  log monitor (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log record-priority
+  log stdout
+  log stdout (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log syslog
+  log syslog (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log timestamp precision <0-6>
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD)
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark .LINE
+  no access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D
+  no access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D A.B.C.D
+  no access-list (<1-99>|<1300-1999>) (deny|permit) any
+  no access-list (<1-99>|<1300-1999>) (deny|permit) host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D host A.B.C.D
+  no access-list WORD (deny|permit) A.B.C.D/M
+  no access-list WORD (deny|permit) A.B.C.D/M exact-match
+  no access-list WORD (deny|permit) any
+  no banner motd
+  no bgp config-type
+  no bgp multiple-instance
+  no debug bgp
+  no debug bgp as4
+  no debug bgp as4 segment
+  no debug bgp events
+  no debug bgp filters
+  no debug bgp fsm
+  no debug bgp keepalives
+  no debug bgp updates
+  no debug bgp zebra
+  no hostname [HOSTNAME]
+  no ip as-path access-list WORD
+  no ip as-path access-list WORD (deny|permit) .LINE
+  no ip community-list <1-99>
+  no ip community-list <1-99> (deny|permit) .AA:NN
+  no ip community-list <100-500>
+  no ip community-list <100-500> (deny|permit) .LINE
+  no ip community-list expanded WORD
+  no ip community-list expanded WORD (deny|permit) .LINE
+  no ip community-list standard WORD
+  no ip community-list standard WORD (deny|permit) .AA:NN
+  no ip extcommunity-list <1-99>
+  no ip extcommunity-list <1-99> (deny|permit) .AA:NN
+  no ip extcommunity-list <100-500>
+  no ip extcommunity-list <100-500> (deny|permit) .LINE
+  no ip extcommunity-list expanded WORD
+  no ip extcommunity-list expanded WORD (deny|permit) .LINE
+  no ip extcommunity-list standard WORD
+  no ip extcommunity-list standard WORD (deny|permit) .AA:NN
+  no ip prefix-list WORD
+  no ip prefix-list WORD (deny|permit) (A.B.C.D/M|any)
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  no ip prefix-list WORD description
+  no ip prefix-list WORD description .LINE
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) (A.B.C.D/M|any)
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  no ip prefix-list sequence-number
+  no log facility [FACILITY]
+  no log monitor [LEVEL]
+  no log record-priority
+  no log stdout [LEVEL]
+  no log syslog [LEVEL]
+  no log syslog facility (kern|user|mail|daemon|auth|syslog|lpr|news|uucp|cron|local0|local1|local2|local3|local4|local5|local6|local7)
+  no log timestamp precision
+  no route-map WORD
+  no route-map WORD (deny|permit) <1-65535>
+  no router bgp <1-4294967295>
+  no router bgp <1-4294967295> view WORD
+  no service advanced-vty
+  no service terminal-length [<0-512>]
+  quit
+  route-map WORD (deny|permit) <1-65535>
+  router bgp <1-4294967295>
+  router bgp <1-4294967295> view WORD
+  service advanced-vty
+  service terminal-length <0-512>
+  show history
+  show running-config
+  write
+bgp(config)#

@@ -1,0 +1,332 @@
+//ospf command on XG v18
+//ospf> list
+  enable
+  exit
+  help
+  list
+  quit
+  show history
+  show ip ospf
+  show ip ospf border-routers
+  show ip ospf database
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) (self-originate|)
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D (self-originate|)
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D adv-router A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) adv-router A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as|max-age|self-originate)
+  show ip ospf interface [INTERFACE]
+  show ip ospf neighbor
+  show ip ospf neighbor A.B.C.D
+  show ip ospf neighbor IFNAME
+  show ip ospf neighbor IFNAME detail
+  show ip ospf neighbor all
+  show ip ospf neighbor detail
+  show ip ospf neighbor detail all
+  show ip ospf route
+  show ip prefix-list
+  show ip prefix-list WORD
+  show ip prefix-list WORD A.B.C.D/M
+  show ip prefix-list WORD A.B.C.D/M first-match
+  show ip prefix-list WORD A.B.C.D/M longer
+  show ip prefix-list WORD seq <1-4294967295>
+  show ip prefix-list detail
+  show ip prefix-list detail WORD
+  show ip prefix-list summary
+  show ip prefix-list summary WORD
+  show logging
+  show mpls-te interface [INTERFACE]
+  show mpls-te router
+  show thread cpu [FILTER]
+  show version
+  show work-queues
+  terminal length <0-512>
+  terminal no length
+  who
+//ospf> 
+//ospf> en
+//ospf# list
+  clear ip prefix-list
+  clear ip prefix-list WORD
+  clear ip prefix-list WORD A.B.C.D/M
+  clear thread cpu [FILTER]
+  configure terminal
+  copy running-config startup-config
+  debug ospf event
+  debug ospf ism
+  debug ospf ism (status|events|timers)
+  debug ospf lsa
+  debug ospf lsa (generate|flooding|install|refresh)
+  debug ospf nsm
+  debug ospf nsm (status|events|timers)
+  debug ospf nssa
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all)
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv) (detail|)
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv|detail)
+  debug ospf zebra
+  debug ospf zebra (interface|redistribute)
+  disable
+  end
+  exit
+  help
+  list
+  logmsg (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging) .MESSAGE
+  no debug ospf event
+  no debug ospf ism
+  no debug ospf ism (status|events|timers)
+  no debug ospf lsa
+  no debug ospf lsa (generate|flooding|install|refresh)
+  no debug ospf nsm
+  no debug ospf nsm (status|events|timers)
+  no debug ospf nssa
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all)
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv) (detail|)
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv|detail)
+  no debug ospf zebra
+  no debug ospf zebra (interface|redistribute)
+  no terminal monitor
+  quit
+  show debugging ospf
+  show history
+  show ip access-list
+  show ip access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD)
+  show ip ospf
+  show ip ospf border-routers
+  show ip ospf database
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) (self-originate|)
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D (self-originate|)
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) A.B.C.D adv-router A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as) adv-router A.B.C.D
+  show ip ospf database (asbr-summary|external|network|router|summary|nssa-external|opaque-link|opaque-area|opaque-as|max-age|self-originate)
+  show ip ospf interface [INTERFACE]
+  show ip ospf neighbor
+  show ip ospf neighbor A.B.C.D
+  show ip ospf neighbor IFNAME
+  show ip ospf neighbor IFNAME detail
+  show ip ospf neighbor all
+  show ip ospf neighbor detail
+  show ip ospf neighbor detail all
+  show ip ospf route
+  show ip prefix-list
+  show ip prefix-list WORD
+  show ip prefix-list WORD A.B.C.D/M
+  show ip prefix-list WORD A.B.C.D/M first-match
+  show ip prefix-list WORD A.B.C.D/M longer
+  show ip prefix-list WORD seq <1-4294967295>
+  show ip prefix-list detail
+  show ip prefix-list detail WORD
+  show ip prefix-list summary
+  show ip prefix-list summary WORD
+  show logging
+  show mpls-te interface [INTERFACE]
+  show mpls-te router
+  show route-map [WORD]
+  show running-config
+  show startup-config
+  show thread cpu [FILTER]
+  show version
+  show work-queues
+  terminal length <0-512>
+  terminal monitor
+  terminal no length
+  terminal no monitor
+  who
+  write
+//ospf# configure terminal
+//ospf(config)# list
+  access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark .LINE
+  access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D
+  access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D A.B.C.D
+  access-list (<1-99>|<1300-1999>) (deny|permit) any
+  access-list (<1-99>|<1300-1999>) (deny|permit) host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip any host A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D A.B.C.D A.B.C.D
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D any
+  access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D host A.B.C.D
+  access-list WORD (deny|permit) A.B.C.D/M
+  access-list WORD (deny|permit) A.B.C.D/M exact-match
+  access-list WORD (deny|permit) any
+  banner motd default
+  banner motd file [FILE]
+  debug ospf event
+  debug ospf ism
+  debug ospf ism (status|events|timers)
+  debug ospf lsa
+  debug ospf lsa (generate|flooding|install|refresh)
+  debug ospf nsm
+  debug ospf nsm (status|events|timers)
+  debug ospf nssa
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all)
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv) (detail|)
+  debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv|detail)
+  debug ospf zebra
+  debug ospf zebra (interface|redistribute)
+  end
+  exit
+  help
+  hostname WORD
+  interface IFNAME
+  ip prefix-list WORD (deny|permit) (A.B.C.D/M|any)
+  ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32>
+  ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  ip prefix-list WORD description .LINE
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) (A.B.C.D/M|any)
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32>
+  ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  ip prefix-list sequence-number
+  line vty
+  list
+  log facility (kern|user|mail|daemon|auth|syslog|lpr|news|uucp|cron|local0|local1|local2|local3|local4|local5|local6|local7)
+  log monitor
+  log monitor (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log record-priority
+  log stdout
+  log stdout (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log syslog
+  log syslog (emergencies|alerts|critical|errors|warnings|notifications|informational|debugging)
+  log timestamp precision <0-6>
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD)
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark
+  no access-list (<1-99>|<100-199>|<1300-1999>|<2000-2699>|WORD) remark .LINE
+  no access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D
+  no access-list (<1-99>|<1300-1999>) (deny|permit) A.B.C.D A.B.C.D
+  no access-list (<1-99>|<1300-1999>) (deny|permit) any
+  no access-list (<1-99>|<1300-1999>) (deny|permit) host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip A.B.C.D A.B.C.D host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip any host A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D A.B.C.D A.B.C.D
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D any
+  no access-list (<100-199>|<2000-2699>) (deny|permit) ip host A.B.C.D host A.B.C.D
+  no access-list WORD (deny|permit) A.B.C.D/M
+  no access-list WORD (deny|permit) A.B.C.D/M exact-match
+  no access-list WORD (deny|permit) any
+  no banner motd
+  no debug ospf event
+  no debug ospf ism
+  no debug ospf ism (status|events|timers)
+  no debug ospf lsa
+  no debug ospf lsa (generate|flooding|install|refresh)
+  no debug ospf nsm
+  no debug ospf nsm (status|events|timers)
+  no debug ospf nssa
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all)
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv) (detail|)
+  no debug ospf packet (hello|dd|ls-request|ls-update|ls-ack|all) (send|recv|detail)
+  no debug ospf zebra
+  no debug ospf zebra (interface|redistribute)
+  no hostname [HOSTNAME]
+  no interface IFNAME
+  no ip prefix-list WORD
+  no ip prefix-list WORD (deny|permit) (A.B.C.D/M|any)
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32>
+  no ip prefix-list WORD (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  no ip prefix-list WORD description
+  no ip prefix-list WORD description .LINE
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) (A.B.C.D/M|any)
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M ge <0-32> le <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32>
+  no ip prefix-list WORD seq <1-4294967295> (deny|permit) A.B.C.D/M le <0-32> ge <0-32>
+  no ip prefix-list sequence-number
+  no log facility [FACILITY]
+  no log monitor [LEVEL]
+  no log record-priority
+  no log stdout [LEVEL]
+  no log syslog [LEVEL]
+  no log syslog facility (kern|user|mail|daemon|auth|syslog|lpr|news|uucp|cron|local0|local1|local2|local3|local4|local5|local6|local7)
+  no log timestamp precision
+  no route-map WORD
+  no route-map WORD (deny|permit) <1-65535>
+  no router ospf
+  no service advanced-vty
+  no service terminal-length [<0-512>]
+  quit
+  route-map WORD (deny|permit) <1-65535>
+  router ospf
+  service advanced-vty
+  service terminal-length <0-512>
+  show history
+  show running-config
+  write
+//ospf(config)# interface PortA
+  ospf(config-if)# list
+  description .LINE
+  end
+  exit
+  help
+  ip ospf authentication
+  ip ospf authentication (null|message-digest)
+  ip ospf authentication-key AUTH_KEY
+  ip ospf cost <1-65535>
+  ip ospf cost <1-65535> A.B.C.D
+  ip ospf dead-interval <1-65535>
+  ip ospf dead-interval minimal hello-multiplier <1-10>
+  ip ospf hello-interval <1-65535>
+  ip ospf message-digest-key <1-255> md5 KEY
+  ip ospf mtu-ignore
+  ip ospf network (broadcast|non-broadcast|point-to-multipoint|point-to-point)
+  ip ospf priority <0-255>
+  ip ospf retransmit-interval <3-65535>
+  ip ospf transmit-delay <1-65535>
+  list
+  mpls-te link max-bw BANDWIDTH
+  mpls-te link max-rsv-bw BANDWIDTH
+  mpls-te link metric <0-4294967295>
+  mpls-te link rsc-clsclr BITPATTERN
+  mpls-te link unrsv-bw <0-7> BANDWIDTH
+  no description
+  no ip ospf authentication
+  no ip ospf authentication-key
+  no ip ospf cost
+  no ip ospf cost <1-65535>
+  no ip ospf cost <1-65535> A.B.C.D
+  no ip ospf cost A.B.C.D
+  no ip ospf dead-interval
+  no ip ospf hello-interval
+  no ip ospf message-digest-key <1-255>
+  no ip ospf mtu-ignore
+  no ip ospf network
+  no ip ospf priority
+  no ip ospf retransmit-interval
+  no ip ospf transmit-delay
+  no ospf authentication-key
+  no ospf cost
+  no ospf cost <1-65535>
+  no ospf cost <1-65535> A.B.C.D
+  no ospf cost A.B.C.D
+  no ospf dead-interval
+  no ospf hello-interval
+  no ospf message-digest-key <1-255>
+  no ospf network
+  no ospf priority
+  no ospf retransmit-interval
+  no ospf transmit-delay
+  ospf authentication-key AUTH_KEY
+  ospf cost <1-65535>
+  ospf cost <1-65535> A.B.C.D
+  ospf dead-interval <1-65535>
+  ospf hello-interval <1-65535>
+  ospf message-digest-key <1-255> md5 KEY
+  ospf network (broadcast|non-broadcast|point-to-multipoint|point-to-point)
+  ospf priority <0-255>
+  ospf retransmit-interval <3-65535>
+  ospf transmit-delay <1-65535>
+  quit
+  show running-config
+  write
