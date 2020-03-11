@@ -1,5 +1,22 @@
 # v18 OSPF and BGP commands
- Most commands can be seen with a '?' or by typing 'list'
+
+### Base guide
+```
+Most commands can be seen with a '?' or by typing 'list'
+```
+
+### Note
+```
  The Engine Running OSPF is Quagga. Only Supports OSPF v2 at the moment
- Will update on the running version on BGP
- coming soon RIP commands as well
+ ```
+
+### Update History
+```
+ Updated with BGP
+```
+
+### Roadmap
+```
+* To update BGP engine and version used
+* To update RIP engine and version user
+```
